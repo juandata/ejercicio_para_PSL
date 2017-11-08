@@ -1,0 +1,105 @@
+<!--
+Author: Juan David Tabares Arce
+Author URL: http://juandavidarce.co
+
+Solución de ejercicio LCD-REFACTOR para PSL. Código fuente del ejercicio ubicado en: https://github.com/pslcorp/lcdrefactor
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Solución de ejercicio LCD-REFACTOR para PSL</title>
+    <meta name="description" content="Soy desarrollador profesional de páginas web interactivas. Experto en SEO, marketing de contenidos e interfaces de usuario UI. Manejo páginas con precios económicos. ">
+    <meta name="keywords" content="Diseño web, Diseño de Páginas Web, Alojamiento, Diseñador económico, HTML, CSS, XML, JavaScript">
+    <meta name="author" content="Juan David Tabares Arce">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- hojas de estilo del ejercicio -->
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+  </head>
+
+  <body>
+    <h1>Diseñador por Juan David Tabares Arce para PSL</h1>
+    <div>
+
+      <p>Escribe dos números separados por una coma, el primero para el tamaño y el segundo para indicar los números que deben aparecer, finalmente presiona enter.<br>
+        Para borrar todos los números digita "backspace".<br>
+        Para detener la aplicación escribe 0,0 y presiona enter.
+      </p>
+      <p>Escribe los dos parametros aquí y presiona enter: <input type="text" id="numero" placeholder="Escribe los dos números"></p>
+      <blockquote style="color: red;">En HTML no es posible añadir los caracteres: "-" y "|" sumando  <em>(size+2 columnas y 2*size + 3 filas)</em> como lo requiere el ejercicio por lo que tuve que usar la
+        etiqueta "textarea", <em>pido discupas por las limitaciones.</em>. <strong>Como no es posible sumar y restar con los caracteres mencionados en HTML
+        modifique el tamaño de la fuente con la propiedad "font-size" desde JavaScript</strong>.
+      </blockquote>
+      <h4>Los números en estilo LCD son: </h4>
+
+    </div>
+    <p id="demo"></p><br>
+    <!--Números en textarea (fue imposible añadirlos de otra forma para poder sumar y restar como lo requeria el ejercicio) debido a las limitaciones
+  que presentan los caracteres "-" y "|"en HTML -->
+   <textarea id="n0" >
+        _
+       | |
+       |_|
+
+   </textarea>
+   <textarea id="n1" >
+
+       |
+       |
+
+   </textarea>
+   <textarea id="n2" >
+      _
+      _|
+     |_
+
+   </textarea>
+   <textarea id="n3" >
+       _
+       _|
+       _|
+
+   </textarea>
+   <textarea id="n4" >
+
+     |_|
+       |
+
+   </textarea>
+   <textarea id="n5" >
+     _
+    |_
+     _|
+
+   </textarea>
+   <textarea id="n6" >
+        _
+       |_
+       |_|
+
+   </textarea>
+   <textarea id="n7" >
+      _
+       |
+       |
+
+   </textarea>
+   <textarea id="n8" >
+       _
+      |_|
+      |_|
+
+   </textarea>
+   <textarea id="n9" >
+       _
+      |_|
+       _|
+
+   </textarea>
+
+
+    <!--Script del ejercicio -->
+    <script src="js/impresor_lcd.js"></script>
+  </body>
+  <!--Gracias por la oportunidad de hacer este ejercicio. Quedo atento a sus comentarios y retroalimentación-->
+</html>
